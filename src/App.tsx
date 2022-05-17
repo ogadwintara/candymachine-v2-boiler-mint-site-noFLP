@@ -4,6 +4,7 @@ import { useMemo } from "react";
 import Minter from "./Minter";
 
 import * as anchor from "@project-serum/anchor";
+import Typography from '@material-ui/core/Typography';
 import { clusterApiUrl } from "@solana/web3.js";
 import { WalletAdapterNetwork } from "@solana/wallet-adapter-base";
 import {
@@ -70,31 +71,19 @@ const App = () => {
             <img className="mobile-nav-logo" src="/img/logo.png" alt="" />
           </li>
           <li>
-            <a href="/#link1" onClick={toggleMenu}>
-              Link 1
-            </a>
-          </li>
-          <li>
-            <a href="/#link2" onClick={toggleMenu}>
-              Link 2
-            </a>
-          </li>
-          <li>
-            <a href="/#link3" onClick={toggleMenu}>
-              Link 3
-            </a>
-          </li>
-          <li>
-            <a href="/#link4" onClick={toggleMenu}>
-              Link 4
+            <a href="/launchpad" onClick={toggleMenu}>
+              Launchpad
             </a>
           </li>
           <li>
             <div className="social-icons">
-              <a href="https://twitter.com" target="_blank" rel="noreferrer">
+              <a href="https://thesupersol.net/" target="_blank" rel="noreferrer">
+                <img className="nav-social" src="/icons/website.svg" alt="" />
+              </a>
+              <a href="https://twitter.com/SuperSol_X" target="_blank" rel="noreferrer">
                 <img className="nav-social" src="/icons/twitter.svg" alt="" />
               </a>
-              <a href="https://discord.com" target="_blank" rel="noreferrer">
+              <a href="https://discord.com/invite/4hDDF8rQsA" target="_blank" rel="noreferrer">
                 <img className="nav-social" src="/icons/discord.svg" alt="" />
               </a>
             </div>
@@ -107,42 +96,30 @@ const App = () => {
       <nav>
         <div className="nav-container">
           <img className="nav-logo" src="/img/logo.png" alt="" />
-          <a className="hide-800" href="/#link1">
-            Link 1
-          </a>
-          <a className="hide-800" href="/#link2">
-            Link 2
-          </a>
-          <a className="hide-800" href="/#link3">
-            Link 3
-          </a>
-          <a className="hide-800" href="/#link4">
-            Link 4
-          </a>
+
           <div className="social-icons hide-800">
-            <a href="https://twitter.com" target="_blank" rel="noreferrer">
+            <a href="https://thesupersol.net/" target="_blank" rel="noreferrer">
+              <img className="nav-social" src="/icons/website.svg" alt="" />
+            </a>
+            <a href="https://twitter.com/SuperSol_X" target="_blank" rel="noreferrer">
               <img className="nav-social" src="/icons/twitter.svg" alt="" />
             </a>
-            <a href="https://discord.com" target="_blank" rel="noreferrer">
+            <a href="https://discord.com/invite/4hDDF8rQsA" target="_blank" rel="noreferrer">
               <img className="nav-social" src="/icons/discord.svg" alt="" />
             </a>
           </div>
         </div>
       </nav>
       <div className="content-wrapper">
-        <header className="card" id="link1">
+        <header className="card" id="launchpad">
           <div style={{ padding: "0 24px 0 24px 0" }}>
             <h3 className="text-secondary-color">Welcome To</h3>
-            <h1 className="pb-3">The Boiler Plate</h1>
+            <h1 className="pb-3">TheSuperSOL</h1>
             <p className="text-secondary-color">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam
-              scelerisque ipsum non est porta mollis. Donec sapien sapien,
-              dictum eget enim sed, hendrerit semper orci. Donec ante magna,
-              consequat at eros ac, eleifend dictum sem. Nam vitae condimentum
-              lorem. Vestibulum molestie dui turpis, tincidunt porta sem congue
-              nec.
+              SUPERSOL is the next step in launchpad development to allow future nft artists to grow and market NFT projects with ease. The NFT launchpad platform running in the world of solana incorporates a unique launchpad model. NFT holders can incubate, fund and launch the most promising projects across NFT artists.
             </p>
           </div>
+          
           <div>
             <ThemeProvider theme={theme}>
               <ConnectionProvider endpoint={endpoint}>
@@ -161,61 +138,54 @@ const App = () => {
             </ThemeProvider>
           </div>
         </header>
-
-        <div id="link2" className="container">
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ac velit
-          aliquet, semper sapien sed, ornare augue. Phasellus sed velit
-          interdum, sagittis metus quis, facilisis lectus. Cras sollicitudin
-          purus at magna eleifend maximus. Nulla nec nulla in nunc maximus
-          viverra in at mauris. Fusce sodales dolor nisi, et vehicula orci porta
-          id. In placerat nunc sed erat lacinia tincidunt. Interdum et malesuada
-          fames ac ante ipsum primis in faucibus. Vestibulum commodo eget metus
-          vitae tempus. Aliquam pharetra mi at efficitur accumsan. Curabitur
-          venenatis libero a ex porttitor, at auctor turpis hendrerit. Nam
-          commodo, risus non consequat pretium, erat ante auctor purus, a cursus
-          dolor erat at velit. Maecenas dignissim, dolor sed laoreet aliquam,
-          tortor lacus faucibus urna, eget mattis massa sem ac dui. Nam semper
-          hendrerit interdum. Etiam at dictum nisi.
-        </div>
-
         <div id="link3" className="container card">
-          <h1 className="pb-3">Lorem ipsum</h1>
+          <h1 className="pb-3">Vision</h1>
+          <p className="text-secondary-color">
+            As the Solana ecosystem grows, we see more and more nft projects that are expected to appear out of nowhere, but artists find it very difficult to market their nft or even to grow in the solana ecosystem. we are here to help nft artists grow and be able to develop their projects .Supersol offers a secure platform where the community is in complete control of their project's Launchpad process.
+          </p>
         </div>
-
         <div id="link4" className="container faq">
-          <h1 style={{ padding: "0 0 24px 0" }}>FAQ</h1>
+          <h1 style={{ padding: "0 0 24px 0" }} className="text-secondary-color">FAQ</h1>
           <div>
-            <h4>Lorem ipsum?</h4>
-            <p>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-              Suspendisse id metus id mauris tincidunt posuere. Vivamus neque
-              odio, imperdiet vitae.
+            <h4 className="text-secondary-color">What is SuperSOL?</h4>
+            <p className="text-secondary-color">
+              SuperSOL OF 1200 ULTRA REALISTIC. Great art is only the beginning.
+              Ultra-realistic 3D details, Utilities ,$SOS Token,SOS Incubator,Launchpad
+            </p>
+            <hr />
+          </div>
+          <div>
+            <h4 className="text-secondary-color">Tokenomic NFT SuperSOL?</h4>
+            <p className="text-secondary-color">NFT SuperSOL Auction</p>
+            <p className="text-secondary-color">-60% will be allocated directly to our Treasury</p>
+            <p className="text-secondary-color">-20% will be used for Giveaways and Events to the SuperArmy community</p>
+            <p className="text-secondary-color">-20% will be received by Team</p>
+            <hr />
+          </div>
+          <div>
+            <h4 className="text-secondary-color">What are the prices for Presale and public sales SuperSol?</h4>
+            <p className="text-secondary-color">0.35 SOL (Pre Sale) dan 0.7 SOL (Public Sale)</p>
+            <hr />
+          </div>
+          <div>
+            <h4 className="text-secondary-color">What's the utility? Is there anything other than art?</h4>
+            <p className="text-secondary-color">
+              YES! Very. Please see our full Roadmap. Here are some highlights:
+              SOS tokens, earn and stake.
+              Every SuperSOL holder will be entitled to participate in various kinds of Launchpad
+              SuperSOL Incubator, helping smaller projects to get started in exchange for benefits for our SuperArmy members.
             </p>
 
             <hr />
           </div>
-
-          <div>
-            <h4>Lorem ipsum?</h4>
-            <p>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-              Suspendisse id metus id mauris tincidunt posuere. Vivamus neque
-              odio, imperdiet vitae.
-            </p>
-
-            <hr />
-          </div>
-
-          <div>
-            <h4>Lorem ipsum?</h4>
-            <p>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-              Suspendisse id metus id mauris tincidunt posuere. Vivamus neque
-              odio, imperdiet vitae.
-            </p>
-
-            <hr />
-          </div>
+          <div> <Typography
+            variant="caption"
+            align="center"
+            display="block"
+            style={{ marginTop: 100, color: 'grey' }}
+          >
+            Powered by TheSuperSOL
+          </Typography></div>
         </div>
       </div>
     </div>
